@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Painting</title>
+    <link rel="stylesheet" href="main2.css">
+</head>
+
+<body>
+
+    <h1>King Painting</h1>
+
+    <p class="description">Use this form to obtain a quick estimate of the cost to paint a room.</p>
+
+    <div class="form-wrapper">
+        <form action="#" method="post">
+            <div class="form-row">
+                <label for="room-length">Room length in feet:</label>
+                <input type="text" id="room-length" name="room-length">
+            </div>
+
+            <div class="form-row">
+                <label for="room-width">Room width in feet:</label>
+                <input type="text" id="room-width" name="room-width">
+            </div>
+
+            <div class="form-row">
+                <label for="room-height">Room height in feet:</label>
+                <input type="text" id="room-height" name="room-height">
+            </div>
+
+            <div class="button-row">
+                <input type="button" value="Display Estimated Paint Cost" onclick="calculateCost()">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function calculateCost() {
+            var length = parseFloat(document.getElementById('room-length').value) || 0;
+            var width = parseFloat(document.getElementById('room-width').value) || 0;
+            var height = parseFloat(document.getElementById('room-height').value) || 0;
+
+            // Calculate wall area (2 walls of each dimension)
+            var wallArea = 2 * (length * height) + 2 * (width * height);
+
+            // Estimate cost: $0.25 per square foot
+            var cost = wallArea * 0.25;
+
+            alert("Estimated Paint Cost: $" + cost.toFixed(2));
+        }
+    </script>
+
+</body>
+
+</html>

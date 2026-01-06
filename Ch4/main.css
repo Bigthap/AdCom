@@ -1,0 +1,237 @@
+/* CSS Reset */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ol,
+ul,
+li,
+a {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4e4e4e;
+}
+
+/* =============== HEADER =============== */
+.header {
+    background-color: #c27e7e;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* =============== NAVIGATION =============== */
+.nav {
+    background-color: #cd5c5c;
+    padding: 10px 20px;
+}
+
+.nav a {
+    color: #ffe4b5;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* =============== MAIN CONTENT =============== */
+.main {
+    background-color: #f5f5dc;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 400px;
+}
+
+/* Featured Image Section */
+.f_img {
+    width: 100%;
+    max-width: 630px;
+    height: 246px;
+    background: #ffffff url(Cake1.jpeg) top left no-repeat;
+    background-size: cover;
+}
+
+.f_img h3 {
+    margin: 0;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 8px 15px;
+    text-transform: uppercase;
+}
+
+/* =============== MAGIC CAKE PAGE =============== */
+.content-box {
+    background-color: #f5f5dc;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.content-box h2 {
+    color: #cd5c5c;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.content-box p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.content-box a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.content-box h3 {
+    color: #cd5c5c;
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+}
+
+.content-box ul {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.content-box li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* =============== RECIPES PAGE =============== */
+.recipes-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.recipes-container h2 {
+    color: #cd5c5c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipe-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.recipe-item:last-child {
+    border-bottom: none;
+}
+
+.recipe-item img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.recipe-info h4 {
+    color: #cd5c5c;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.recipe-info p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* =============== FORM PAGE =============== */
+.form-container {
+    background-color: #ffffff;
+    border: 1px solid #4682b4;
+    max-width: 500px;
+    padding: 30px;
+    margin: 30px;
+}
+
+.form-container h2 {
+    color: #4682b4;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4682b4;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4682b4;
+    box-sizing: border-box;
+    font-size: 14px;
+    min-height: 80px;
+    resize: vertical;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-group label {
+    color: #333;
+    font-size: 14px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.form-container button {
+    background-color: #d3d3d3;
+    border: 1px solid #999;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form-container button:hover {
+    background-color: #c0c0c0;
+}
