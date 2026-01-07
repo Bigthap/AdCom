@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save The World: Order Form</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="Img/Hero2.jpg" alt="Recipe World Logo">
+        <h3>Menu1</h3>
+        <h3>Menu2</h3>
+        <h3>Menu3</h3>
+    </div>
+
+    <div class="recipes-container">
+        <form action="productPrice.php" method="post">
+
+            <div class="recipe-item">
+                <h4>CAKE 1</h4>
+                <img src="Img/Cake2.jpg" alt="Cake 1">
+                <div class="recipe-info">
+                    <p>Price: 450 THB</p>
+                    <div class="quantity-input">
+                        <label>Quantity</label>
+                        <input type="number" name="q1" min="0" value="0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-item">
+                <h4>CAKE 2</h4>
+                <img src="Img/Cake2.jpg" alt="Cake 2">
+                <div class="recipe-info">
+                    <p>Price: 570 THB</p>
+                    <div class="quantity-input">
+                        <label>Quantity</label>
+                        <input type="number" name="q2" min="0" value="0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-item">
+                <h4>CAKE 3</h4>
+                <img src="Img/Cake3.jpg" alt="Cake 3">
+                <div class="recipe-info">
+                    <p>Price: 630 THB</p>
+                    <div class="quantity-input">
+                        <label>Quantity</label>
+                        <input type="number" name="q3" min="0" value="0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-row">
+                <div class="shipping-row">
+                    <label for="shipping">Shipping type</label>
+                    <select id="shipping" name="shipping">
+                        <option value="">Select shipping method</option>
+                        <option value="Flash">Flash</option>
+                        <option value="EMS">EMS</option>
+                        <option value="Kerry">Kerry</option>
+                    </select>
+                </div>
+
+                <div class="button-row">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

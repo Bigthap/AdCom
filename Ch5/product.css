@@ -1,0 +1,205 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ol,
+ul,
+li,
+a {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    background: #ffffff url(RE.jpg) top left repeat-y;
+}
+
+/* =============== HEADER =============== */
+.header {
+    background-color: #d33447;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+.header img {
+    height: 180px;
+    width: 180px;
+    background-color: white;
+    object-fit: contain;
+    padding: 5px;
+    margin-left: 10px;
+    /* ระยะห่างจากขอบซ้าย */
+    flex-shrink: 0;
+    /* ไม่ให้โลโก้หดตัว */
+}
+
+.header h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 150px;
+    /* ปรับลด-เพิ่มระยะห่างตรงนี้ได้ตามใจ */
+    /* ให้เมนูแต่ละอันกินพื้นที่เท่าๆ กันในส่วนที่เหลือ */
+    text-align: center;
+    /* จัดตัวหนังสือให้อยู่กึ่งกลางพื้นที่ของตัวเอง */
+}
+
+/* =============== HEADER =============== */
+
+
+
+.recipes-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 680px;
+    margin: 20px auto;
+}
+
+.recipes-container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: flex-start;
+}
+
+.recipes-container h2 {
+    color: #cd5c5c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #eee;
+    background-color: #ffc0cb;
+    width: 190px;
+    flex: 0 0 auto;
+}
+
+.recipe-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 20px 0 10px 0;
+    display: block;
+}
+
+.recipe-item h4 {
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #5c2e2e;
+    margin: 0;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+/* .recipe-info h4 {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 16px;
+    background-color: #cd5c5c;
+} */
+
+.recipe-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-info p {
+    color: #070707;
+    font-size: 16px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.quantity-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 15px 0;
+}
+
+.quantity-input label {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.quantity-input input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.bottom-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.shipping-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.shipping-row label {
+    font-size: 16px;
+    color: #000;
+    font-weight: normal;
+}
+
+.shipping-row select {
+    padding: 8px 30px 8px 10px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: white;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.button-row {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button-row input[type="submit"],
+.button-row input[type="reset"] {
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #888;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.button-row input[type="submit"]:hover,
+.button-row input[type="reset"]:hover {
+    background-color: #666;
+}
