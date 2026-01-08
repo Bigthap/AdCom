@@ -203,3 +203,52 @@ body {
 .button-row input[type="reset"]:hover {
     background-color: #666;
 }
+
+/* =============== PHP =============== */
+
+.content-box {
+    background-color: #c5e4f7;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.content-box h2 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #a02727;
+    height: 40px;
+}
+
+.content-box p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+}
+
+.content-box a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.content-box h3 {
+    color: #cd5c5c;
+    font-size: 28px;
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+
+.content-box ul {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.content-box li {
+    margin-bottom: 5px;
+    color: #333;
+}
