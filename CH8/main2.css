@@ -1,0 +1,73 @@
+/* =============== MAIN2.CSS - Lab 4 Part 2 =============== */
+/* For paintEstimate.html and softwareOrder.html */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+/* =============== HEADINGS =============== */
+h1 {
+    color: #4682b4;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* =============== DESCRIPTION TEXT =============== */
+.description {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* =============== FORM STYLING =============== */
+.form-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-row input[type="text"],
+.form-row input[type="number"],
+.form-row select {
+    padding: 8px;
+    border: 1px solid #999;
+    font-size: 14px;
+    min-width: 150px;
+}
+
+/* =============== BUTTONS =============== */
+.button-row {
+    margin-top: 25px;
+}
+
+.button-row button,
+.button-row input[type="submit"],
+.button-row input[type="reset"],
+.button-row input[type="button"] {
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.button-row button:hover,
+.button-row input[type="submit"]:hover,
+.button-row input[type="reset"]:hover,
+.button-row input[type="button"]:hover {
+    background-color: #d0d0d0;
+}
